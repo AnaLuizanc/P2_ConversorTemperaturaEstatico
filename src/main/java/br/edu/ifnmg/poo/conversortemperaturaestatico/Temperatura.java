@@ -18,4 +18,11 @@ public class Temperatura {
     }
 //</editor-fold>
 
+    public static double converteKelvinParaCelsius() throws TemperaturaInvalidaException {
+        if (Temperatura.temperatura < 0) {
+            throw new TemperaturaInvalidaException("Valor da temperatura abaixo do zero absoluto");
+        } else {
+            return Temperatura.temperatura - 273.15;
+        }
+    }
 }
