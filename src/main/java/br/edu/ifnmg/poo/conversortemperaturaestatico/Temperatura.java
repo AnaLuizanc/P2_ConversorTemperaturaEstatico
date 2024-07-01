@@ -20,7 +20,7 @@ public class Temperatura {
 
     public static double converteKelvinParaCelsius() throws TemperaturaInvalidaException {
         if (Temperatura.temperatura < 0) {
-            throw new TemperaturaInvalidaException("Valor da temperatura abaixo do zero absoluto");
+            throw new TemperaturaInvalidaException();
         } else {
             return Temperatura.temperatura - 273.15;
         }
@@ -28,7 +28,7 @@ public class Temperatura {
 
     public static double converteKelvinParaFahrenheit() throws TemperaturaInvalidaException {
         if (temperatura < 0) {
-            throw new TemperaturaInvalidaException("Valor da temperatura abaixo do zero absoluto");
+            throw new TemperaturaInvalidaException();
         } else {
             return (temperatura * 9.0 / 5) - 459.67;
         }
