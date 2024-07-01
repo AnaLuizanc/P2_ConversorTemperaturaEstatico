@@ -1,12 +1,13 @@
 package br.edu.ifnmg.poo.conversortemperaturaestatico;
 
 /**
+ * Classe de conversão de temperaturas.
  *
- * @author analu
+ * @author AnaLuizanc
  */
 public class Temperatura {
 
-    static double temperatura;
+    private static double temperatura;
 
     //<editor-fold defaultstate="collapsed" desc="Getters / Setters">
     public static double getTemperatura() {
@@ -33,4 +34,5 @@ public class Temperatura {
             return (temperatura * 9.0 / 5) - 459.67;
         }
     }
+
 }
