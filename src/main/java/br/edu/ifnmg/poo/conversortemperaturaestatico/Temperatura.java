@@ -34,7 +34,13 @@ public class Temperatura {
             return (Temperatura.temperatura * 9.0 / 5) - 459.67;
         }
     }
-    
-    
+
+    public static double conversorCelsiusParaKelvin() throws TemperaturaInvalidaException {
+        if (Temperatura.temperatura < -273.15) {
+            throw new TemperaturaInvalidaException();
+        } else {
+            return Temperatura.temperatura + 273.15;
+        }
+    }
 
 }
