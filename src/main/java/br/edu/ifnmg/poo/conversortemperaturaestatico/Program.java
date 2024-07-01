@@ -13,7 +13,7 @@ public class Program {
         //<editor-fold defaultstate="collapsed" desc="Testes de conversão de Kelvin para Celsius">
         try {
             Temperatura.setTemperatura(20.0);
-            System.out.println(">> Resultado: " + Temperatura.converteKelvinParaCelsius() + " °C");
+            System.out.println(">> Resultado: " + Temperatura.conversorKelvinParaCelsius() + " °C");
 
         } catch (TemperaturaInvalidaException e) {
             System.out.println("ERRO: " + e.getMessage());
@@ -21,7 +21,7 @@ public class Program {
 
         try {
             Temperatura.setTemperatura(37.9);
-            System.out.println(">> Resultado: " + Temperatura.converteKelvinParaCelsius() + " °C");
+            System.out.println(">> Resultado: " + Temperatura.conversorKelvinParaCelsius() + " °C");
 
         } catch (TemperaturaInvalidaException e) {
             System.out.println("ERRO: " + e.getMessage());
@@ -29,7 +29,7 @@ public class Program {
 
         try {
             Temperatura.setTemperatura(-10.0);
-            System.out.println(">> Resultado: " + Temperatura.converteKelvinParaCelsius() + " °C");
+            System.out.println(">> Resultado: " + Temperatura.conversorKelvinParaCelsius() + " °C");
 
         } catch (TemperaturaInvalidaException e) {
             System.out.println("ERRO: " + e.getMessage());
@@ -41,21 +41,21 @@ public class Program {
         //<editor-fold defaultstate="collapsed" desc="Testes de conversão de Kelvin para Fahrenheit">
         try {
             Temperatura.setTemperatura(20.0);
-            System.out.println("Resultado: " + Temperatura.converteKelvinParaFahrenheit() + " °F");
+            System.out.println("Resultado: " + Temperatura.conversorKelvinParaFahrenheit() + " °F");
         } catch (TemperaturaInvalidaException e) {
             System.out.println("ERRO: " + e.getMessage());
         }
 
         try {
             Temperatura.setTemperatura(37.9);
-            System.out.println("Resultado: " + Temperatura.converteKelvinParaFahrenheit() + " °F");
+            System.out.println("Resultado: " + Temperatura.conversorKelvinParaFahrenheit() + " °F");
         } catch (TemperaturaInvalidaException e) {
             System.out.println("ERRO: " + e.getMessage());
         }
 
         try {
             Temperatura.setTemperatura(-10.0);
-            System.out.println("Resultado: " + Temperatura.converteKelvinParaFahrenheit() + " °F");
+            System.out.println("Resultado: " + Temperatura.conversorKelvinParaFahrenheit() + " °F");
         } catch (TemperaturaInvalidaException e) {
             System.out.println("ERRO: " + e.getMessage());
         }

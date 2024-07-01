@@ -19,7 +19,7 @@ public class Temperatura {
     }
 //</editor-fold>
 
-    public static double converteKelvinParaCelsius() throws TemperaturaInvalidaException {
+    public static double conversorKelvinParaCelsius() throws TemperaturaInvalidaException {
         if (Temperatura.temperatura < 0) {
             throw new TemperaturaInvalidaException();
         } else {
@@ -27,12 +27,14 @@ public class Temperatura {
         }
     }
 
-    public static double converteKelvinParaFahrenheit() throws TemperaturaInvalidaException {
-        if (temperatura < 0) {
+    public static double conversorKelvinParaFahrenheit() throws TemperaturaInvalidaException {
+        if (Temperatura.temperatura < 0) {
             throw new TemperaturaInvalidaException();
         } else {
-            return (temperatura * 9.0 / 5) - 459.67;
+            return (Temperatura.temperatura * 9.0 / 5) - 459.67;
         }
     }
+    
+    
 
 }
