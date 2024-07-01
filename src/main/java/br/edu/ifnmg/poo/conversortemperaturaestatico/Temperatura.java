@@ -43,4 +43,12 @@ public class Temperatura {
         }
     }
 
+    public static double conversorCelsiusParaFahrenheit() throws TemperaturaInvalidaException {
+        if (Temperatura.temperatura < -273.15) {
+            throw new TemperaturaInvalidaException();
+        } else {
+            return 9.0 / 5 * Temperatura.temperatura + 32;
+        }
+    }
+
 }
