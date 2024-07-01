@@ -111,5 +111,31 @@ public class Program {
         }
 //</editor-fold>
 
+        System.out.println("FAHRENHEIT -> KELVIN");
+
+//<editor-fold defaultstate="collapsed" desc="Testes de conversão de Fahrenheit para Kelvin">
+        try {
+            Temperatura.setTemperatura(90.0);
+            System.out.println(">> Resultado: " + Temperatura.conversorFahrenheitParaKelvin()+ " K");
+        } catch (TemperaturaInvalidaException e) {
+            System.out.println("ERRO: " + e.getMessage());
+        }
+
+        try {
+            Temperatura.setTemperatura(-474.0);
+            System.out.println(">> Resultado: " + Temperatura.conversorFahrenheitParaKelvin()+ " K");
+        } catch (TemperaturaInvalidaException e) {
+            System.out.println("ERRO: " + e.getMessage());
+        }
+
+        try {
+            Temperatura.setTemperatura(23.7);
+            System.out.println(">> Resultado: " + Temperatura.conversorFahrenheitParaKelvin()+ " K");
+        } catch (TemperaturaInvalidaException e) {
+            System.out.println("ERRO: " + e.getMessage());
+        }
+
+//</editor-fold>
+
     }
 }
