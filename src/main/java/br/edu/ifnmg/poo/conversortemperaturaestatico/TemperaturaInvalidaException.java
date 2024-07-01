@@ -1,14 +1,11 @@
 package br.edu.ifnmg.poo.conversortemperaturaestatico;
 
 /**
- * 
- * @author analu
+ * Classe de exceção.
+ * @author AnaLuizanc
  */
 public class TemperaturaInvalidaException extends Exception {
-
-   public TemperaturaInvalidaException(){
-   }
-    
+ 
     public TemperaturaInvalidaException(String mensagem) {
         super(mensagem);
     }
