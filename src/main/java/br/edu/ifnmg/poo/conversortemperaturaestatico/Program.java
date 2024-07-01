@@ -86,5 +86,30 @@ public class Program {
         }
 
 //</editor-fold>
+        System.out.println("CELSIUS -> FAHRENHEIT");
+
+        //<editor-fold defaultstate="collapsed" desc="Testes de conversão de Celsius para Fahrenheit">
+        try {
+            Temperatura.setTemperatura(39.2);
+            System.out.println(">> Resultado: " + Temperatura.conversorCelsiusParaFahrenheit() + " °F");
+        } catch (TemperaturaInvalidaException e) {
+            System.out.println("ERRO: " + e.getMessage());
+        }
+
+        try {
+            Temperatura.setTemperatura(-274.0);
+            System.out.println(">> Resultado: " + Temperatura.conversorCelsiusParaFahrenheit() + " °F");
+        } catch (TemperaturaInvalidaException e) {
+            System.out.println("ERRO: " + e.getMessage());
+        }
+
+        try {
+            Temperatura.setTemperatura(42.0);
+            System.out.println(">> Resultado: " + Temperatura.conversorCelsiusParaFahrenheit() + " °F");
+        } catch (TemperaturaInvalidaException e) {
+            System.out.println("ERRO: " + e.getMessage());
+        }
+//</editor-fold>
+
     }
 }
