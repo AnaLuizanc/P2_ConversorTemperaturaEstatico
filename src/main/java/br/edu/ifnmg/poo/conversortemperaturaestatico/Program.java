@@ -4,7 +4,7 @@ import java.util.Locale;
 
 /**
  *
- * @author analu
+ * @author AnaLuizanc
  */
 public class Program {
 
@@ -115,7 +115,7 @@ public class Program {
 
         System.out.println("FAHRENHEIT -> KELVIN");
 
-//<editor-fold defaultstate="collapsed" desc="Testes de conversão de Fahrenheit para Kelvin">
+        //<editor-fold defaultstate="collapsed" desc="Testes de conversão de Fahrenheit para Kelvin">
         try {
             Temperatura.setTemperatura(90.0);
             System.out.println(">> Resultado: " + String.format(Locale.US, "%.1f", Temperatura.conversorFahrenheitParaKelvin()) + " K");
@@ -137,10 +137,10 @@ public class Program {
             System.out.println("ERRO: " + e.getMessage());
         }
 
-//</editor-fold>
+        //</editor-fold>
         System.out.println("FAHRENHEIT -> CELSIUS");
 
-//<editor-fold defaultstate="collapsed" desc="Testes de conversão de Fahrenheit para Celsius">
+        //<editor-fold defaultstate="collapsed" desc="Testes de conversão de Fahrenheit para Celsius">
         try {
             Temperatura.setTemperatura(90.0);
             System.out.println(">> Resultado: " + String.format(Locale.US, "%.1f", Temperatura.conversorFahrenheitParaCelsius()) + " °C");
